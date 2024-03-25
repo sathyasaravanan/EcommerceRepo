@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Craftedtreasures Suite">
+	<listeners>
+		  <listener class-name="com.craftedTreasures.listeners.MyListeners"/>
+	  </listeners>
+  <test  name="Craftedtreasures Tests" parallel="methods">
+	  
+    <classes>
+      <class name="com.craftedTrasures.testcases.Register"/>
+      <class name="com.craftedTrasures.testcases.Search"/>
+      <class name="com.craftedTrasures.testcases.Login"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

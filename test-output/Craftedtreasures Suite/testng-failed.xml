@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Craftedtreasures Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.craftedTreasures.listeners.MyListeners"/>
+  </listeners>
+  <test thread-count="5" parallel="methods" name="Craftedtreasures Tests(failed)">
+    <classes>
+      <class name="com.craftedTrasures.testcases.Login">
+        <methods>
+          <include name="loginwithinvalidcedentials"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="loginwithvalidcedentials"/>
+        </methods>
+      </class> <!-- com.craftedTrasures.testcases.Login -->
+      <class name="com.craftedTrasures.testcases.Search">
+        <methods>
+          <include name="searchWithvalidProduct"/>
+          <include name="setUp"/>
+          <include name="searchWithNonExistingProduct"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.craftedTrasures.testcases.Search -->
+      <class name="com.craftedTrasures.testcases.Register">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="registerWithAllFields"/>
+        </methods>
+      </class> <!-- com.craftedTrasures.testcases.Register -->
+    </classes>
+  </test> <!-- Craftedtreasures Tests(failed) -->
+</suite> <!-- Failed suite [Craftedtreasures Suite] -->
